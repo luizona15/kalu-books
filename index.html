@@ -1,87 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KALU BOOKS</title>
-      <link rel="stylesheet" href="reset.css">
+    <title>KALU books</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="cabecalho">
         <div class="container">
-            <input type="checkbox" id="menu" class="container_botao">
-            <label for="menu">
-                <span class="cabecalho_menu-hamburguer container_imagem"></span>
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
-            <img src="WhatsApp Image 2024-07-29 at 10.34.57.jpeg" alt="Logo do KALU BOOKS">
-                <a href="#"><img src="favorito.png"></a>
-                <a href="#"><img src="comprar.png"></a>
-                <a href="#"><img src="img/Usuario.svg"></a>
             <ul class="lista-menu">
-                <li class="lista-menu_titulo">Categorias</li>
-                <li class="lista-menu_item">
-                    <a href="#" class="lista-menu_link">Fantasia e romance</a>
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
                 </li>
-                <li class="lista-menu_item">
-                    <a href="#" class="lista-menu_link">Fantasia e ação</a>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia e Romance</a>
                 </li>
-                <li class="lista-menu_item">
-                    <a href="#" class="lista-menu_link">Fantasia e drama</a>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia e Ação</a>
                 </li>
-                <li class="lista-menu_item">
-                    <a href="#" class="lista-menu_link">Fantasia e aventura</a>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia e Drama</a>
                 </li>
-
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia e Aventura</a>
+                </li>
             </ul>
-            <img src="WhatsApp_Image_2024-07-29_at_10.34.57-removebg-preview.png" alt="Logo do KALU BOOKS" class="container_imagem">
+            <img src="WhatsApp_Image_2024-07-29_at_10.34.57-removebg-preview.png" alt="Logo do KALU" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">KALU</b>books</h1>
         </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opções-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia e Romance</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia e Ação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia e Drama</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia e Aventura</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="favorito.png" alt="Meus favoritos" class="container_imagem"></a>
-            <a href="#"><img src="comprar.png" alt="Carrinho de compras" class="container_imagem"></a>
-            <a href="#"><img src="do-utilizador.png" alt="Meu perfil" class="container_imagem"></a>
+            <a href="#"><img src="favorite" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container-link">
+                <img src="shopping-cart (1).png" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="profile (3).png" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
-
     </header>
-
     <section class="banner">
-        <h2 class="banner_titulo">Já sabe por onde começar?</h2>
-        <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner_pesquisa" placeholder="Qual sera sua proxima leitura?">
+        <h2 class="banner-titulo">Já sabe por onde começar?</h2>
+        <p class="banner-texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
-
-    <section class="carrosel">
-        <h2 class="carrosel_titulo">Novos lançamentos</h2>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="WhatsApp Image 2024-07-29 at 09.41.47 (1) (1).jpeg" alt="Livro sobre ">
-            </div>
-            <div class="swiper-slide">
-                <img src="WhatsApp Image 2024-07-29 at 09.41.47 (1).jpeg" alt="Livro sobre ">
-            </div>
-            <div class="swiper-slide">
-                <img src="WhatsApp Image 2024-07-29 at 09.41.47 (2).jpeg" alt="Livro sobre ">
-            </div>
-            <div class="swiper-slide">
-                <img src="WhatsApp Image 2024-07-29 at 09.41.47 (3).jpeg" alt="Livro sobre" />           
-            </div>                
-        </div>
+        <div class="carrossel-container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttos -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
-    
-    <div class="card">
-        <!-- 1º linha -->
-        <div class="card_"
-    </div>
-                            
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-07-29 at 09.41.47.jpeg"
+                            alt="A ordem da sociedade é ameaçada quando Mare Barrow, uma jovem comum de sangue vermelho, descobre que tem um poder até então exclusivo à elite de sangue prateado."></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-07-29 at 09.41.47 (1).jpeg"
+                            alt="Em Corte de Asas e Ruína a guerra se aproxima, um conflito que promete devastar Prythian. Em meio à Corte Primaveril, num perigoso jogo de intrigas e mentiras, a Grã-Senhora da Corte Noturna esconde seu laço de parceria e sua verdadeira lealdade."></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-07-29 at 09.41.47 (2).jpeg"
+                            alt="“O Encanto dos Corvos” nos conta a história de Isobel, que não passa de uma humana normal que vive no reino Excêntrico, um lugar onde fadas e outros seres passeiam livremente e é lá que ela trabalha criando retratos do povo das fadas: um povo que não é nada confiável e que faz pagamentos a ela com pequenos feitiços – desde feitiços para sempre ter ovos em casa até feitiços que protejam sua casa e sua família, dependendo da pessoa para quem ela cria o retrato."></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-07-29 at 09.41.47 (3).jpeg" alt="É a história da jovem de 17 anos que sonha em abrir uma confeitaria com sua melhor amiga e empregada, Mary Ann. Mas Catherine é de família nobre, e confeiteira é uma função exercida por meros plebeus. Para realizar seu sonho, Catherine tenta conquistar o rei, enviando para ele macarrons, tortas de limão e outras delícias. O que ela não previa era que o rei se apaixonasse por ela e a pedisse em casamento."></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-07-29 at 09.41.47 (4).jpeg" alt="Hazel e seu irmão, Ben, moram em Fairfold, uma cidade onde humanos e o Povo do Ar convivem pacificamente. Turistas visitam o lugar para testemunhar as maravilhas do Povo e o elemento mais maravilhoso ali, o garoto de chifres. Mas os visitantes nunca conseguem ver o perigo daquelas árvores."></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-07-29 at 09.41.47 (5).jpeg" alt="Contada com maestria, A casa no mar cerúleo é uma história encantadora sobre a profunda experiência de descobrir uma família improvável em um lugar inesperado — e de lutar por ela como se fosse sua."></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descricao">
+                    <!-- 1º coluna -->
+                    <div class="descricoo">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Fantasia Infantil</h2>
+                        <p class="descricao__texto">Talvez você esteja procurando um livros mais fantasiosos </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="burger-menu.png" class="descricao__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botoes">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botoes__item"><img src="favorite.png" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="shopping-cart (1).png" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-08-19 at 14.59.02.jpeg"
+                            alt="Precisam convencer dois reinos partidos da legitimidade da união e evitar uma guerra. Mas trabalhar lado a lado com o inimigo apresenta riscos perigosos demais, e voltar a se apaixonar por Casteel é um deles. Em Um reino de carne e fogo, as traições cortam mais fundo do que a lâmina e a paixão arde mais quente do que o fogo."></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-08-21 at 15.40.35 (1).jpeg"
+                            alt="O livro conta a história de uma menina chamada Alice que ao perseguir um coelho branco antropomórfico, acaba sendo transportada para um lugar fantástico, povoado de criaturas peculiares, como o Chapeleiro Louco, a Rainha de Copas, a Lagarta e o Gato de Cheshire."></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-08-21 at 15.40.36 (1).jpeg"
+                            alt="Nessa trama, uma garotinha se muda com os seus pais para uma nova casa, que parece possuir alguns segredos. Curiosa, buscando desvendar aqueles mistérios, Coraline descobre o outro mundo"></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-08-21 at 15.40.36.jpeg" alt="Valeria está aprendendo a tocar violino, e, um dia, enquanto ensaia, um ser muito peculiar aparece, atraído pelo som de seu instrumento.
+                        A partir desse momento, Valeria adentrará um mágico mundo."></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-08-21 at 15.50.41.jpeg" alt="Em breve, o Aladdin e a deposta princesa Jasmine terão de se unir ao povo de Agrabah, lançando uma rebelião que trave o ditador enlouquecido. Só que essa luta pelo poder tem um preço elevado e ameaça destruir o próprio reino."></div>
+                    <div class="swiper-slide"><img src="WhatsApp Image 2024-08-21 at 15.50.42 (1).jpeg" alt="A linhagem de Berethnet governa há mil anos, e acredita-se que os dragões ressurgirão se ela for dizimada. A rainha Sabran, a última de sua linhagem, vive então sob a ameaça de uma conspiração para cumprir este intento e assassiná-la. Mas ao seu lado está Ead, maga de uma poderosa ordem secreta que deve protegê-la."></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descricao">
+                    <!-- 1º coluna -->
+                    <div class="descricao">
+                        <img src="5-star.png" alt="Avaliação 5 estrelas">
+                        <h3 class="descricao__titulo">Autora do Mês</h3>
+                        <h2 class="descricao__titulo-livro">Luiza Eduarda Mendes Moraes</h2>
+                        <p class="descricao__texto">Escritora de Ação e Romance, especilista em criar livros de Fantasia.                    </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="WhatsApp_Image_2024-08-21_at_17.12.53-removebg-preview.png" class="descricao__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botoes">
+                    <!-- 1º coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="favorite.png" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="shopping-cart (1).png" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fantasia</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fantasia e Romance</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fantasia e Ação</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fantasia e Drama</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fantasia e Aventura</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fantasia e comédia</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fantasia Mística</a>
+            </li>
+            
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo da Karol</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Fantasia </li>
+            <li class="lista-rodape__item">
+                <img src="parque-de-diversoes (1).png" alt="Logo da casa do codigo">
+                <a href="#" class="lista-rodape__link">Infantil</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="supplier.png" alt="Logo da Music Dot">
+                <a href="#" class="lista-rodape__link">Fornecedores</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Importantes!!</li>
+            <li class="lista-rodape__item">
+                <img src="product-return.png" alt="Logo da Alura">
+                <a href="#" class="lista-rodape__link">Devoluções</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="contato.png" alt="Logo da Alura para Empresas">
+                <a href="#" class="lista-rodape__link">Contato</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="information.png" alt="Logo da Alura Latam">
+                <a href="#" class="lista-rodape__link">Informações</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Comunidades</li>
+            <li class="lista-rodape__item">
+                <img src="tik-tok.png" alt="Logo tik tok">
+                <a href="#" class="lista-rodape__link">Booktok</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="youtube.png" alt="Logo do Yotube">
+                <a href="#" class="lista-rodape__link">Booktube</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="instagram (2).png" alt="logo instagram">
+                <a href="#" class="lista-rodape__link">Bookstagram</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="facebook.png" alt="Logo da Alura START">
+                <a href="#" class="lista-rodape__link">Facebook</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
+
 </html>
