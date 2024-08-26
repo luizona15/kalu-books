@@ -18,7 +18,7 @@ body {
     font-weight: 400;
 }
 
-.cabecalho__menu-hamburguer {
+.cabeçalho__menu-hamburguer {
     width: 24px ;
     height: 24px;
     background-image: url("burger-menu.png");
@@ -201,17 +201,17 @@ body {
     padding: 2.5em 2em;
 }
 
-.banner__titulo {
+.banner-titulo {
     font-size: 18px;
     font-weight: 700;
 }
 
-.banner__texto {
+.banner-texto {
     font-weight: 500;
     margin: 1em 0;
 }
 
-.banner__pesquisa {
+.banner-pesquisa {
     background-color: transparent;
     border: 1px solid var(--branco);
     color: var(--branco);
@@ -220,7 +220,7 @@ body {
     width: 100%;
 }
 
-.banner__pesquisa::placeholder {
+.banner-pesquisa::placeholder {
     font-family: var(--fonte-principal);
     font-size: 14px;
     font-weight: 400;
@@ -327,6 +327,7 @@ body {
 
 .botoes__item {
     margin: 0 0.5em;
+    width: 60%;
 }
 
 .botoes__ancora {
@@ -360,7 +361,46 @@ body {
         width: 40%;
         margin: 2em auto;
     }
+
 }
+
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
+  }
+
+  .contato__titulo,
+.contato__texto {
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+  }
+
+  .contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+  }
+
+  .contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/Email.svg") no-repeat;
+    padding-left: 2em;
+  }
 
 @media screen and (min-width: 1728px) {
     .carrossel__container {
@@ -499,3 +539,6 @@ hr {
     }
 }
 
+.botoes__carrinho {
+    width: 1px;
+}
